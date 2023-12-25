@@ -1,3 +1,5 @@
+# HashCracker v1 by Pritam Das
+
 import hashlib
 import pyfiglet
 from os import path
