@@ -36,7 +36,7 @@ class HashCracker():
     target = ""
     wordlistfile = ""
 
-    def __init__(self, target: str, wordlistfile: str, wordchunks: int = 50) -> None:
+    def __init__(self, target: str, wordlistfile: str, wordchunks: int = 10000) -> None:
         target = target.strip()
         wordlistfile = wordlistfile.strip()
 
@@ -115,10 +115,11 @@ if not hc:
     target_hash = input('Enter Target Hash or Target Hash File: ')
     dict_path = input('Enter Dictionary File Path: ')
     try:
-        words_pp = int(input('Enter Words Per Process: '))
+        words_pp = int(input('Enter Words Per Process (Default 10000): '))
         print()
         hc = HashCracker(target_hash, dict_path, words_pp)
     except ValueError as e:
+        print()
         hc = HashCracker(target_hash, dict_path)
 
 
