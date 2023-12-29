@@ -1,5 +1,7 @@
 # HashCracker
-A tool designed to perform dictionary attack on SHA256 hashes. It implements parallel computation of hashes to compute through large dictionaries more quickly.
+A tool designed to perform dictionary attack on SHA256 hashes. It implements parallel computation of hashes to compute through large dictionaries more quickly.  
+  
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/pritam20ps05/HashCracker/blob/master/LICENSE)
 ## Usage
 Install python3 and dependencies mentioned in requirements.txt file then use the tool by
 ```bash
